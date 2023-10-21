@@ -1,0 +1,104 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- REGISTRATION SECTION -->
+<section>
+    <div class="heading">
+        <span class="heading-text">
+            <ion-icon name="newspaper-outline"></ion-icon>
+            <p class="new-registration">New Registration</p>
+        </span>
+    </div>
+    <div id="scrollToForm" class="form-class">
+        <div class="page-container">
+            <div class="content">
+                <form id="dataForm"
+                      onsubmit="event.preventDefault();"
+                      autocomplete="off">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">First Name</span>
+                            <input type="text"
+                                   placeholder="Your first name"
+                                   name="firstName"
+                                   id="firstName"
+                                   required />
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Last Name</span>
+                            <input type="text"
+                                   placeholder="Your last name"
+                                   name="lastName"
+                                   id="lastName"
+                                   required />
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Age</span>
+                            <input type="number"
+                                   placeholder="How old are you?"
+                                   name="age"
+                                   id="age"
+                                   required />
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="email"
+                                   placeholder="Enter your email"
+                                   name="eMail"
+                                   id="eMail"
+                                   required />
+                        </div>
+                    </div>
+                    <div class="gender-details">
+                        <input type="radio" name="gender" id="dot-1" value="Male" />
+                        <input type="radio" name="gender" id="dot-2" value="Female" />
+                        <input type="radio" name="gender" id="dot-3" value="Other" />
+                        <span class="gender-title">Gender</span>
+                        <div class="category">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="gender">Male</span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="gender">Female</span>
+                            </label>
+                            <label for="dot-3">
+                                <span class="dot three"></span>
+                                <span class="gender">Other</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Register" id="submitButton" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- REGISTRATION SECTION OVER-->
+<!-- TABLE SECTION -->
+<section id="scrollToTable">
+    <div class="heading">
+        <span class="heading-text">
+            <ion-icon name="people-outline"></ion-icon>
+            <p class="new-registration">Client List</p>
+        </span>
+    </div>
+    <table id="clientRows" class="table-section">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th class="action-th">Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</section>
+<!-- TABLE SECTION OVER-->
